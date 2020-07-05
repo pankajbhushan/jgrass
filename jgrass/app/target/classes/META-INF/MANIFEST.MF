@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 11
+Implementation-Title: jgrass
+Implementation-Version: 0.0.2-SNAPSHOT
+Main-Class: com.grassproject.jgrass.JgrassApplication
+Created-By: Maven Integration for Eclipse
+
