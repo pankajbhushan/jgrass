@@ -1,4 +1,4 @@
-package com.grassproject.jgrass.web.service;
+package com.grassproject.jgrass.service;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,10 +10,10 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.sun.org.apache.bcel.internal.classfile.ClassParser;
-import com.sun.org.apache.bcel.internal.classfile.Field;
-import com.sun.org.apache.bcel.internal.classfile.JavaClass;
-import com.sun.org.apache.bcel.internal.classfile.Method;
+import org.apache.bcel.classfile.ClassParser;
+import org.apache.bcel.classfile.Field;
+import org.apache.bcel.classfile.JavaClass;
+import org.apache.bcel.classfile.Method;
 
 @Service
 public class UploadService {

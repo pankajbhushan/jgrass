@@ -1,4 +1,4 @@
-package com.grassproject.jgrass.web.config;
+package com.grassproject.jgrass.config;
 
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletContext;

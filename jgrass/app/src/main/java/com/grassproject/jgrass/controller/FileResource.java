@@ -1,4 +1,4 @@
-package com.grassproject.jgrass.web.controller;
+package com.grassproject.jgrass.controller;
 
 import java.util.List;
 
@@ -13,17 +13,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.grassproject.jgrass.web.service.UploadService;
+import com.grassproject.jgrass.service.UploadService;
 
 @RestController
-@RequestMapping(value = "/home")
-public class HomeController {
-	private static Logger LOGGER = Logger.getLogger(HomeController.class);
-
-	@Autowired
-	UploadService uploadService;
+@RequestMapping(value = "/v1/file")
+public class FileResource {
 	
-	@PostMapping(value = "/uploadFile",produces = MediaType.APPLICATION_JSON_VALUE)
+	private static Logger LOGGER = Logger.getLogger(FileResource.class);
+	@Autowired private UploadService uploadService;
+	
+	@PostMapping(value = "/upload",produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public List<String> parseFile(@RequestParam("name") String name, @RequestParam("file") MultipartFile file) {
 		if (file.isEmpty()) {

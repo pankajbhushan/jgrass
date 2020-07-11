@@ -1,1 +1,4 @@
 node_modules
+/jgrass/libs
+/jgrass/app/target
+/jgrass-ui/node_modules

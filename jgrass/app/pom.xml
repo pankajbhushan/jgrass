@@ -21,7 +21,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
+		<java.version>1.9</java.version>
 	</properties>
 
 	<dependencies>
@@ -55,15 +55,24 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.4</version>
 		</dependency>
+		
+		<!-- Apache BCEL -->
+		<dependency>
+		    <groupId>org.apache.bcel</groupId>
+		    <artifactId>bcel</artifactId>
+		    <version>6.5.0</version>
+		</dependency>
+				
 	</dependencies>
 	
 	<build>
-		<sourceDirectory>src/main/com.kodcu.user</sourceDirectory>
+		<sourceDirectory>src/main/com.grassproject.jgrass</sourceDirectory>
 		<plugins>
 			  <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
+                	<release>9</release>
                     <archive>
                         <manifest>
                             <mainClass>com.grassproject.jgrass.JgrassApplication</mainClass>
